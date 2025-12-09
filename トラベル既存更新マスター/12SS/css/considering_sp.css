@@ -1,0 +1,844 @@
+a {-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}
+a:active{ text-decoration: none !important; opacity: .7;}
+.pc{ display: none !important;}
+.ss-contents{ background: #fff; font-family: "Noto Sans JP", sans-serif;}
+.ss-container{ border: none; margin: 0 auto 24px;padding: 0 16px;}
+.timeLine{display: flex;justify-content: center;align-items: center; padding: 10px 0; background: #FFFFE2;}
+.timeLine img{width: 85%;}
+.Link-list {border: none;flex: 1; width: auto;}
+.Link-list a{color: #333 !important; padding: 24px 0 0 !important;}
+.Link-list.navi_icon_coupon a{background: url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/navi_icon_coupon.svg) no-repeat center 0 / 20px;}
+.Link-list.navi_icon_campaign a{background: url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/navi_icon_campaign.svg) no-repeat center 0 / 20px;}
+.Link-list.navi_icon_plan a{background: url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/navi_icon_plan.svg) no-repeat center 0 / 20px;}
+.Link-list.navi_icon_search a{background: url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/navi_icon_search.svg) no-repeat center 0 / 20px;}
+
+.ttlicon_w.navi_icon_coupon:after{background: url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/navi_icon_coupon.svg) no-repeat center;}
+.ttlicon_w.navi_icon_campaign:after{background: url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/navi_icon_campaign.svg) no-repeat center;}
+.ttlicon_w.navi_icon_plan:after{background: url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/navi_icon_plan.svg) no-repeat center;}
+.ttlicon_w.navi_icon_search:after{background: url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/navi_icon_search.svg) no-repeat center;}
+
+/* .Link-list .noicon{ padding-left: 0;}
+.Link-list .noicon::after{ content: normal;} */
+.cpLinkwindow {margin: 28px auto 16px;}
+.swiper-wrapper{ flex-wrap: nowrap;}
+
+.navSPbtn.active { bottom: 160px !important;}
+.navSPbtn li{margin-top: 4px;}
+.navSPbtn li.btn-aichat{width: auto;height: auto;bottom: 0;right: 0;}
+.benefit_point img{display: block; width: 100%; margin: 0 auto 16px;}
+
+/* .benefit_point{display: flex; flex-direction: column; align-items: center; margin: 0 auto 32px;}
+.benefit_point h3{width: 50%;margin-bottom: -12px;position: relative;}
+.benefit_point h3 img{display: block; width: 100%;}
+.point{border-radius: 10px; background: #FFF9F9;padding: 16px 12px; width: 100%; box-sizing: border-box;display: flex; flex-direction: column;row-gap: 8px;}
+.point li{padding-left: 26px; background: url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/icon_point_check.svg) no-repeat left 6px / 16px;}
+.point li p{font-size: 13px; color: #333;}
+.point li p b{position: relative;z-index: 1;}
+.point li p b:after{position: absolute; content: ''; left: 0; right: 0; height: 6px; background: #FFD3D3;bottom: 2px;z-index: -1;}
+.point li p b.blue{color: #007CB5;}
+.point li p b.red{color: #BF0000;}
+.point li p b span{font-size: 18px;} */
+
+
+.senko{background: #FFF9F9;padding: 24px 16px;display: flex;flex-direction: column; gap: 16px;}
+.senko img{width: 100%;}
+/* #guide .swiper-container{ padding-bottom: 8px;}
+#guide .swiper-wrapper dd{ font-size: 14px; margin-top: 8px; color: #333; line-height: 1.6;}
+#guide .ss-banner-box{ margin-top: 48px;}
+#guide .ss-banner-box img{ width: 100%;} */
+
+.jdsTabMain{ display: none; background: #ffffff; padding: 0 16px;}
+
+/* popUpplan */
+.mapPopUp.popUpplan>p#popUpplan{ max-height: 685px;}
+#popUpplan h3{ text-align: center; font-size: 24px;}
+#popUpplan .arealist{ margin: 8px auto 0; display: flex; justify-content: flex-start; flex-wrap: wrap;}
+#popUpplan .arealist li.one{ width:100%; margin: 0 0 8px; text-align: center;}
+#popUpplan .arealist li.one.half{ display: flex; justify-content: space-between;}
+#popUpplan .arealist li.one.half a{ display: block;}
+#popUpplan .mapflex{ width: calc(100% - 1px); left: 0; overflow: hidden;}
+#popUpplan .mapflex li.half{ width: calc(50% - 1px); border-left: none !important;}
+
+
+#keywordSearch{ margin: 0 auto; width: 520px;}
+#keywordSearch form{display: flex; justify-content: center;}
+#keywordSearch .keyword{ width: 460px; padding: 16px; box-sizing: border-box; border: 1px solid #999; border-radius: 5px 0 0 5px; border-right: none;}
+#keywordSearch .stdSrchBtn{ width: 60px; background: #333; border-radius: 0 3px 3px 0;}
+#keywordSearch .stdSrchBtn a{ height: 100%; display: flex; justify-content: center; align-items: center; background: #333; border-radius: 0 5px 5px 0; color: #ffffff;}
+
+
+
+/* PRICE SLIDER */
+.select-kome{ background: #fff; margin: 0; padding-bottom: 8px;}
+#couponDetBox{position:relative}
+#couponDetBox:after{display:none;content:'loading...';text-align:center;width:100%;padding:5em 0}
+#couponDetBox.active:after{display:block}
+.modal-price ul{display:flex;max-width:375px;justify-content:center;margin:0 auto}
+.modal-price li{font-size:13px;border:1px solid #ccc;border-radius:4px;width:41%;height:56px}
+.modal-price li p{padding:7px 8px 0;position:absolute}
+.modal-price select{font-size:123%;background:#fff;border:none;border-radius:4px;padding:20px 8px 0;width:100%;height:100%}
+.modal-price .price-separation-line{border:none;display:flex;align-items:center;padding:0 8px;width:2%}
+.price-close{display:block;font-size:16px;line-height:56px;text-align:center;font-weight:700}
+.modal-price .Searchnotes{font-size:12px;color:#767676;text-align:center;margin:30px auto 0}
+.btn-price-reset,.btn-price-submit{display:flex;justify-content:center;align-items:center;width:100%;height:60px;text-align:center}
+.btn-price-reset{display:none}
+.btn-price-reset span,.btn-price-submit span{cursor:pointer;display:flex;justify-content:center;align-items:center;font-size:14px;color:#fff;background:#0dbd0d;width:290px;height:36px;border:none;border-radius:4px}
+.btn-price-reset span{background:#666}
+/* /PRICE SLIDER */
+
+
+/*rank*/
+.Rankbox{ position: relative; padding:10px 0 15px 0; margin: 0 30px 30px; }
+.Rankbox.success:after{ opacity: 1;}
+.Rankbox select::-ms-expand{ display: none;}
+.Rankbox .tabMain { margin-top: 30px; position: relative;}
+.Rankbox .swiper-container{ padding:0 !important;}
+.Rankbox .tabMain.swiper-container[data-section-name]{ opacity:1;}
+.Rankbox .jdsTabMain{ padding: 0;}
+.Rankbox .ss-hotelbox{ margin:30px 0 12px 0; display: flex; justify-content: flex-start; padding-bottom: 0; overflow: visible;}
+.Rankbox .ss-hotel { background-color: #fff; position: relative; box-sizing: border-box; padding: 0;border-radius: 5px; border: 1px solid #c3c3c3; box-shadow: 1px 1px 3px #ddd; height: auto; color: #333; margin:8px 0; overflow: visible;}
+.Rankbox .ss-hotel a.htlstar{display:block;font-size:14px;width:110px;margin-bottom: 8px; background-image:url(https://img.travel.rakuten.co.jp/special/supersale/202503/images/star.gif);background-repeat:no-repeat;color:#bf0000!important;text-align:right;font-weight:700;line-height:20px}
+.Rankbox .ss-hotel a.htlstar50{background-position:0 0}
+.Rankbox .ss-hotel a.htlstar45{background-position:0 -20px}
+.Rankbox .ss-hotel a.htlstar40{background-position:0 -40px}
+.Rankbox .ss-hotel a.htlstar35{background-position:0 -60px}
+.Rankbox .ss-hotel a.htlstar30{background-position:0 -80px}
+.Rankbox .ss-hotel a.htlstar25{background-position:0 -100px}
+.Rankbox .ss-hotel a.htlstar20{background-position:0 -120px}
+.Rankbox .ss-hotel a.htlstar15{background-position:0 -140px}
+.Rankbox .ss-hotel a.htlstar10{background-position:0 -160px}
+.Rankbox .ss-hotel a.htlstar05{background-position:0 -180px}
+.Rankbox .ss-hotel a.htlstar00{background-position:0 -200px}
+.Rankbox .ss-hotel a:hover,.Rankbox .ss-hotel a:active{ text-decoration: none;}
+.Rankbox .ss-hotel .htlstar{z-index:1;padding-left:15px;line-height:1}
+.Rankbox .ss-hotel .htlrank{z-index:1;box-sizing:border-box;width:34px;height:34px!important;color:#fff;text-align:center;font-weight:700;font-style:normal;font-size:12px;line-height:45px;position: absolute; top:-29px;}
+.Rankbox .ss-hotel .htlstar:hover{text-decoration:none;cursor:default}
+.Rankbox .ss-hotel .hotel-main .hotel-name{color: #333; font-weight: 700; margin-bottom: 7px; line-height: 1.3; font-size: 16px; position: relative; padding: 0; min-height: 64px;}
+.Rankbox .ss-hotel .hotel-main .hotel-name a{color:#000}
+.Rankbox .ss-hotel.f_premium .hotel-name::after{ content: url(https://img.travel.rakuten.co.jp/share/premium/images/premium_normal.svg); margin: 4px 0 8px; display: block;}
+.Rankbox .ss-hotel.f_platinum .hotel-name::after{ content: url(https://img.travel.rakuten.co.jp/share/premium/images/premium_ultra.svg); margin: 4px 0 8px; display: block;}
+.Rankbox .ss-hotel .hotel-main .chara li{font-size:11px}
+.Rankbox .ss-hotel .hotel-price{text-align:center; margin: 8px 0 0;}
+.Rankbox .ss-hotel .hotel-price span{display:block;color:#bf0000;font-weight:700; font-size: 18px;  /*202306*/text-align: right;}
+.Rankbox .ss-hotel .hotel-price span em{font-size:14px;font-weight: normal;}
+.Rankbox .ss-hotel .hotel-price span em b{font-weight:700;}
+.Rankbox .ss-hotel .area{color:#777;font-size:13px;line-height: 20px;margin-bottom:8px;}
+/* ss2306 new*/
+.Rankbox .ss-hotel .clearfix .area{ float: left; max-width: 52px;}
+.Rankbox .ss-hotel .clearfix .hotel-container{float: right!important; max-width: 74px!important; clear: none!important;}
+.Rankbox .ss-hotel .clearfix .hotel-container .premium{padding: 0!important;}
+.Rankbox .ss-hotel .clearfix .hotel-container .premium img{ margin-left: 0!important;}
+
+
+.Rankbox .ss-hotel .hotel-img{ /*202306*/margin-bottom:0; position: relative; width: auto; float: none;}
+.Rankbox .ss-hotel .hotel-img .bg-img{display:flex;overflow:hidden;height:130px;background-size:cover;text-indent:-9999px;align-items:flex-start;justify-content:center}
+.Rankbox .ss-hotel .hotel-img img{width:auto!important;height:100%!important;line-height:0;flex-shrink:1}
+.Rankbox .ss-hotel .hotel-pr{margin-bottom:5px;color:#333!important;font-size:13px;line-height:1.3; margin: 8px 8px 0;}
+.Rankbox .areanav{ display: flex; flex-wrap: wrap; background: #f3f3f3; padding: 16px 5px;}
+.Rankbox .areanav li{ width: calc(25% - 6px); text-align: center; box-sizing: border-box; margin:0 3px 6px; padding: 0.8em 0; font-size: 14px; background: #fff; border-radius: 5px; cursor: pointer;}
+.Rankbox .areanav li.active{ background: #0dbd0d; color: #fff;}
+.Rankbox .jdsTabNav{ display: flex; justify-content: center; align-items: flex-end; border-bottom: 5px solid #0dbd0d;}
+.Rankbox .jdsTabNav li{margin: 0.6em 2px 0; padding: 0.5em 0.5em 0.5em 0; border-radius: 5px 5px 0 0; background: #666; color: #fff; font-size: 24px; font-weight: bold; text-align: center; vertical-align: center; width: 100%; border: 1px solid #666; border-bottom: none; cursor: pointer;}
+.Rankbox .jdsTabNav li.here{ font-size: 30px; color: #fff; margin-top: 0; background: #0dbd0d; border: 1px solid #0dbd0d; border-bottom: none;}
+.Rankbox .derivation{ margin: 0; padding: 0; font-size: 12px;}
+.Rankbox .ss-hotel.f_premium .hotel-name::after{width: 62px;}
+/*pre*/
+/* .Rankbox .ss-hotel .ss-button.ss-button-green{ display: none!important;}
+.Rankbox .ss-hotel .hotel-price{ display: none!important;} */
+.Rankbox .ss-hotel .ss-button-middle.ss-button-green{ margin-top:8px;margin-bottom:8px;background-color: #ffffff; border: 1px solid #cccccc; color: #666!important; font-size: 14px;}
+/*pre end*/
+/*add start*/
+.Rankbox .ss-hotel .area.hide{ display: none!important;}
+.Rankbox .ss-hotel .premium {clear: both;padding: 5px 0; display: block; height: 20px;}
+.Rankbox .ss-hotel .premium img {max-height:16px!important;width:72px; margin-bottom: 5px;}
+.Rankbox .swiper-slide.last{width: 110px!important;opacity:1;display: flex;padding:0; justify-content: center;align-items:center;height: 100%; font-size: 14px;background:none; position: relative;top:18px;}
+.Rankbox .swiper-slide.last a{display:flex;color:#767676;width: 100%;background-color: #ffffff;height: 100%;justify-content: center; align-items: center; border: 1px solid #999999; border-radius:5px;}
+.Rankbox .swiper-slide.last span{display: block; padding: 0 4px; line-height: 18px;}
+.Rankbox .swiper-slide.last span em{color:#cccccc; font-size: 24px;display:block; padding-bottom: 8px; text-align: center;transform: scaleY(200%);}
+.swiper-container .swiper-button-next {
+top: 50%;
+right:10px;
+width:40px;
+height:40px;
+margin-top: -20px;
+background-image: url(https://img.travel.rakuten.co.jp/special/supersale/202503/images/whiteArr.png) !important;
+background-size:40px 40px;
+}
+.swiper-container .swiper-button-prev {
+top:50%;
+left:10px;
+width:40px;
+height:40px;
+margin-top:-20px;
+background-image: url(https://img.travel.rakuten.co.jp/special/supersale/202503/images/whiteArr.png) !important;
+background-size:40px 40px;
+transform: rotate(180deg);
+}
+.Rankbox .swiper-button-next.swiper-button-disabled,.Rankbox .swiper-button-prev.swiper-button-disabled{opacity: 0;}
+.Rankbox.preBtn .ss-hotel .ss-button-middle.ss-button-green.pre{ display: block;}
+.Rankbox.preBtn .ss-hotel .ss-button-middle.ss-button-green.honban{ display: none;}
+.Rankbox.honbanBtn .ss-hotel .ss-button-middle.ss-button-green.pre{ display: none;}
+.Rankbox.honbanBtn .ss-hotel .ss-button-middle.ss-button-green.honban{ display: block;}
+.moreread{ position: relative; font-size:18px;max-width: 500px; font-weight: bold; border: 1px solid #999; border-radius: 50px; background-color: #fff; color: #333; margin: 32px auto; text-align: center; padding: 0.6em; cursor: pointer;}
+.moreread:hover{ opacity: .7;}
+.moreread a{color: #333333; font-weight: normal;}
+.Rankbox .ss-hotel .area.onsen{margin-top: 8px; min-height:20px;display: none;}
+/* .Rankbox .moreread:after { content: ""; display: block; position: absolute; top: 50%; right: 20px; width: 0.5em; height: 0.5em; margin-top: -0.35em; border-top: 2px solid #c79828; border-right: 2px solid #c79828; transform: rotate(135deg); }
+.Rankbox .moreread.morereadup:after{ transform: rotate(-45deg); margin-top: -0.15em;} */
+
+.Rankbox .moreread a span,.Rankbox .moreread a em{font-style: normal; font-weight: normal;}
+
+.Rankbox .ss-hotel .premium{ display: block; height: 20px;}
+#Rankbox .derivation{ font-size: 12px;}
+#considerRank .attention{margin: 0 16px;}
+.tab1.tabBtns{overflow: hidden;}
+
+
+/* .ss-title .kvBnr{ background: none; height: auto;}
+.ss-title .kvBnr h1{ width: 100%; padding: 0;}
+.kvBnr .kvSP_bg>h1{ margin: 0;}
+.kvBnr .kvSP_bg>h1 img{ width: 100%;} */
+/*rank*/
+.Rankbox{ margin: 0 0 30px;}
+.Rankbox .swiper-slide.last .hide{display: none!important;}
+.Rankbox .subTt{border-bottom: none; padding: 0; font-size: 16px; margin: 16px 4px 0; font-weight: normal;}
+.Rankbox .ss-hotel .hotel-img{ margin:0;}
+.Rankbox .hotel-container{ padding: 0;}
+.Rankbox .jdsTabNav li{ font-size: 16px;}
+.Rankbox .jdsTabNav li.here{ font-size: 18px;}
+.Rankbox .ss-hotel .area,.Rankbox .ss-hotel a{margin-left: 10px; margin-right: 10px; display: block;}
+.Rankbox .ss-hotel .area{margin-bottom:4px; font-size: 11px;}
+.Rankbox .ss-hotel .area.onsen{height: 20px!important;}
+
+.Rankbox .ss-hotel a.bg-img{margin-left: 0px; margin-right: 0px;}
+.Rankbox .ss-hotel .hotel-price{padding: 0;}
+.Rankbox .ss-hotel .hotel-price span{font-size:18px}
+.Rankbox .ss-hotel{padding: 0 0 0 0; margin-top: 10px;}
+.Rankbox .ss-hotel .hotel-container{width: 100%; clear: both; float: none;}
+.Rankbox .ss-hotel .ss-button.ss-button-green{margin-top: 10px;}
+.Rankbox .ss-hotel .hotel-main .hotel-name{padding-left: 10px; padding-right: 10px;}
+.Rankbox #rankTab li{background:#ffffff;border: none; margin: 6px 1.5%; border-radius:3px; padding: 10px 0; text-align: center; font-size: 12px; width:22%; border: none; float: left;}
+.Rankbox #rankTab li.active{ border: none; background: #0dbd0d; color: #ffffff;}
+.Rankbox .ss-hotel .hotel-img .bg-img{border-radius: 5px 5px 0 0;}
+.Rankbox .tabMain{margin-top:10px;}
+.Rankbox .swiper-container .swiper-button-prev{left: 0; display: none;}
+.Rankbox .swiper-container .swiper-button-next{right: 0; display: none;}
+.Rankbox .ss-hotel a.ss-button{margin-left:6px; margin-right: 6px;}
+.Rankbox .column_5 .column-list{ width: 45%;}
+
+.Rankbox .ss-hotel .htlrank{ top:1px; left:1px;}
+.Rankbox .ss-hotel .premium img{margin-left: 10px;}
+.Rankbox .ss-hotel a.hotelName{ display: flex; align-items: center; padding:4px; width: 100%; box-sizing: border-box; position: absolute; left: 0; bottom: 0; color: #fff; background: rgb(0,0,0,.6); margin-left: 0; margin-right: 0; height:39px !important; font-size: 12px; }
+
+
+@media all and (max-width:400px){
+.Rankbox .ss-hotel .hotel-price span{font-size: 16px;}
+}
+ 
+
+#guide .ss-banner-box { margin: 0;}
+#guide .ss-banner-box ul{ flex-wrap: wrap;}
+#guide .ss-banner-box li{ width: 100%; margin: 16px 0 0; max-width: none;}
+
+/* #MAPBOX h2,#MAPBOX h2 span{ font-size: 24px; font-weight: bold;} */
+#popUpplan .mapflex{ width: calc(100% - 1px) !important; overflow: hidden;}
+#popUpplan .mapflex .half{ width:  calc(50% - 1px) !important; float: left !important;}
+
+
+/* popUpplan */
+#popUpplan h3{ font-size: 20px;}
+#popUpplan .arealist{ width: 90%;}
+#popUpplan .arealist li img{ width: 100%;}
+#popUpplan .arealist li.one.half a{ margin: 0 2px 0 0;}
+#popUpplan .arealist li.one.half a:nth-child(2n){ margin: 0 0 0 2px;}
+
+#keywordSearch{ margin: 40px 10px 0; width: calc(100% - 20px);}
+#keywordSearch .keyword{ width: calc(100% - 60px);}
+
+/* coupon */
+.other-cpn-bnr img { width: 100%; }
+
+
+
+.gomain a{ padding: 0;}
+.sqbnr{ display: flex; justify-content: center; flex-wrap: wrap;}
+.sqbnr li{ margin:0 4px 8px;}
+.sqbnr li a { display: flex; justify-content: center; box-sizing: border-box; text-align: center; align-items: center; font-size: 20px; font-weight: bold; height: 133px; color: #fff; background-size: cover; background-repeat: no-repeat; background-position: center center; border-radius: 6px; text-shadow: 1px 1px 2px #333;} 
+.sqbnr2 li a{ font-size: 24px;}
+.sqbnr.fxwarp{ flex-wrap: wrap;}
+
+.Rankbox .derivationB{font-size: 12px;}
+.Rankbox .jsonSort{ padding: 0 8px;}
+
+.sqbnr{ padding-bottom: 8px; justify-content: center;}
+.sqbnr li{ margin:0 4px 8px;}
+.sqbnr li a{ height: 110px; font-size: 16px;}
+.sqbnr2 li{ width: 100% !important;}
+.sqbnr2 li a{ font-size: 20px;}
+.sqbnr5 li{ width: calc(50% - 8px);}
+
+#sectionTab{opacity:100; height:auto;}
+
+.newSectionTab{margin: 10px; font-size: 12px;}
+.newSectionTab li{display: inline-block;margin-bottom: 0;height: 40px;line-height: 24px; margin-right: 10px;}
+.newSectionTab li span{background: none;display:block; border: 1px solid #d3d2d2;border-radius:20px;margin: 0;background-color:#ffffff; cursor: pointer; padding:6px 24px;}
+.newSectionTab li.here span{border: 1px solid #5e8a38; color: #5e8a38;padding-left:24px !important; 
+background: url(data:image/gif;base64,R0lGODlhGAAUALMAAOrv5GmRRt/n2F6KONTgyn+hYKrBlfX48nSZU1SCK+rw5WmSRf///wAAAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhDMzQwQkY3QkJGRTExRUM5QzJBRjhFMDQxQ0M0QzI5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhDMzQwQkY4QkJGRTExRUM5QzJBRjhFMDQxQ0M0QzI5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OEMzNDBCRjVCQkZFMTFFQzlDMkFGOEUwNDFDQzRDMjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEMzNDBCRjZCQkZFMTFFQzlDMkFGOEUwNDFDQzRDMjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQAAAAAACwAAAAAGAAUAAAEN5DJSau9OOvNu/+gpBRKOClLAJgMqrLuyh1V3BlLKaYyJwy5Fg/0WxCGoV/ixRIgeqyodEqlRgAAOw==) left center no-repeat;}
+
+
+.familyBnr a{display: block; margin-left: 10px; margin-right: 10px;}
+.familyBnr a img.sp{ display: block; width: 100%; max-width: 618px; margin-left: auto; margin-right: auto;}
+.Rankbox .ss-hotel .hotel-price span em{font-size: 12px;}
+
+
+
+.kenTabBox{ margin-top:12px; overflow: hidden; margin-bottom:0;}
+.kenTabBox.hide{ height: 1px;opacity: 0;margin-top:0;}
+.kenTab{margin:0 0 0 10px; font-size: 12px;position:relative;}
+.kenTab li{display: inline-block;margin-bottom: 0;height: 40px;line-height: 24px; width: 79.3px; margin-right: 8px;}
+.kenTab li.swiper-slide{ width: auto; margin: 0;}
+.kenTab li label{text-align: center; padding:6px 0;border-radius:4px;font-weight: normal;margin: 0;background-color:#ffffff; display: block; cursor: pointer;}
+.kenTab li input{display: none;}
+.kenTab li input[type="radio"] + label{ background: none; border: 1px solid #d3d2d2;}
+.kenTab li.check input[type="radio"] + label{border: 1px solid #5e8a38; color:#5e8a38;padding-left:24px !important;background: url(data:image/gif;base64,R0lGODlhGAAUALMAAOrv5GmRRt/n2F6KONTgyn+hYKrBlfX48nSZU1SCK+rw5WmSRf///wAAAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhDMzQwQkY3QkJGRTExRUM5QzJBRjhFMDQxQ0M0QzI5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhDMzQwQkY4QkJGRTExRUM5QzJBRjhFMDQxQ0M0QzI5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OEMzNDBCRjVCQkZFMTFFQzlDMkFGOEUwNDFDQzRDMjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEMzNDBCRjZCQkZFMTFFQzlDMkFGOEUwNDFDQzRDMjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQAAAAAACwAAAAAGAAUAAAEN5DJSau9OOvNu/+gpBRKOClLAJgMqrLuyh1V3BlLKaYyJwy5Fg/0WxCGoV/ixRIgeqyodEqlRgAAOw==) left center no-repeat;}
+.kenTab.opc{ opacity: 0;height: 1px;margin: 0;position:absolute; left: 0;overflow: hidden;}
+
+
+.sscamp {
+  text-align: center;
+  margin: 30px auto 60px;
+}
+.sscamp {
+  text-align: center;
+  margin: 0 16px; 
+  padding-top: 16px;
+}
+
+
+#kagoshimaL{ font-size: 11px;}
+
+
+#guide .swiper-container .swiper-button-next,#guide .swiper-container .swiper-button-prev,.sqbnrBox.swiper-container .swiper-button-next,.sqbnrBox.swiper-container .swiper-button-prev{ margin-top: 0; top:35px;}
+#guide .swiper-container .swiper-button-prev,.sqbnrBox.swiper-container .swiper-button-prev{ left:10px;}
+#guide .swiper-container .swiper-button-next,.sqbnrBox.swiper-container .swiper-button-next{ right:10px;}
+
+#filterBtn3{ position: absolute; right: 0; bottom: 105px; transition: all 0.3s ease;}
+#filterBtn3.active3{  bottom: 210px;}
+
+
+section#Searchbox{  margin-bottom: 32px;}
+.banner-container .column-list { box-shadow: none !important; border: 0 !important;}
+
+/* 202306 */
+.ss-noteOut2{ width: 900px; margin: 0px auto 0; border: 1px solid #A9DBFB; border-radius: 6px; padding: 16px 100px; box-sizing: border-box; font-size: 12px; line-height: 1.8;}
+.newBnr{ width: 900px; margin: 30px auto 0;}
+.newBnr li{ margin-bottom: 9px; border: 1px solid #A9DBFB; background: #EDF5FB; border-radius: 6px; padding: 12px 0; text-align: center; position: relative;}
+.newBnr li.gray{ border: 1px solid #ccc; background: #f3f3f3;}
+.newBnr li.iconPlus::before{ display: block; content: url(https://img.travel.rakuten.co.jp/special/supersale/202503/images/iconPlus1.png); position: absolute; left: 50%; top: -21px; margin-left: -16px;}
+.newBnr li.iconPlus.gray::before{content: url(https://img.travel.rakuten.co.jp/special/supersale/202503/images/iconPlus2.png);}
+.newBnr li span{ display: block; margin: 0 auto 12px; font-size: 24px; font-weight: bold;}
+.newBnr li a{ display: block; margin-bottom: 9px;}
+.newBnr li a:last-of-type{ margin-bottom: 0;}
+.newBnr li a:hover{ opacity: .7;}
+
+
+
+.ss-noteOut2{ width: auto; margin: 5px 8px 0; padding: 12px 8px;}
+.newBnr{ width: auto; margin: 24px 8px 0;}
+.newBnr li{ padding:12px 8px;}
+.newBnr li a img{ width: 100%;}
+#halfBnr .flex-box-center{ display: block;}
+#halfBnr .flex-box-center li{ margin:0 0 8px; max-width: none;}
+#halfBnr .flex-box-center img{ width: 100%;}
+
+
+.ss-container.furusato{ margin-bottom: 0;}
+.ss-container.furusato img{ width: 100%;}
+#popUpplan .align-center img{ width: 100%;}
+
+/* 202307 */
+#ssservers .mainTtl,.newTtl{ margin: 10px auto 25px; font-size: 24px; text-align: center; position: relative; padding-bottom: 16px;}
+#ssservers .mainTtl::after,.newTtl::after{ display: block; content: ""; position: absolute; left: 50%; margin-left: -20px; bottom: 0; width: 40px; height: 4px; background: #0dbd0d;}
+.newTtl i{ font-style: normal; color: #bf0000;}
+.newTtl small{ font-size: 18px;}
+.newTtl b{ font-size: 20px;}
+.newTtl span.normal{ font-weight: normal;}
+.newTtl small.ft23{font-size: 18px; color: #333;}
+.newTtl small.ft23 b{ color: #bf0000; font-size: 18px;}
+.newTtl small.ft14{font-size: 12px; color: #333;}
+.newTtl small.ft14 b{ color: #bf0000; font-size: 14px;}
+
+/* MORECPN */
+.ss-box#MORECPN{padding: 0 16px 40px}
+.ss-box#MORECPN .title{font-size:20px;font-weight:400;padding-bottom:8px}
+.ss-box#MORECPN ul{display:flex;flex-wrap:wrap;justify-content:space-between}
+.ss-box#MORECPN ul li{margin-bottom:16px;width:48%;position:relative}
+.ss-box#MORECPN ul li:nth-child(1) a{background-color:#FF41BF}
+.ss-box#MORECPN ul li:nth-child(2) a{background-color:#d18100}
+.ss-box#MORECPN ul li:nth-child(3) a{background-color:#009ceb}
+.ss-box#MORECPN ul li:nth-child(4) a{background-color:#c371ef}
+.ss-box#MORECPN ul li::before{display:block;content:"";border-radius:12px;height:24px;width:24px;background-color:#fff;position:absolute;left:-12px;top:50%;margin-top:-12px}
+.ss-box#MORECPN ul li::after{display:block;content:"";border-radius:12px;height:24px;width:24px;background-color:#fff;position:absolute;right:-12px;top:50%;margin-top:-12px}
+.ss-box#MORECPN ul li a{display:flex;justify-content:space-between;box-sizing:border-box;padding:8px 0;align-items:center;border-radius:6px;font-size:22px;flex-direction:column;height:100px;color:#fff!important}
+.ss-box#MORECPN ul li img{ width: 46px;}
+
+
+/* coupon */
+.btnTP{ margin: 40px 16px 0;}
+.btnTP a{ display: block; background: #bf0000 url(https://img.travel.rakuten.co.jp/special/supersale/202503/images/iconTP.png) 20px center no-repeat; padding: .6em 0; font-size: 18px; font-weight: bold; color: #fff; text-align: center; border-radius: 6px; position: relative; }
+.btnTP a::after{ display: block; content: ""; position: absolute; right: 20px; top: 50%; margin-top: -4px; width: 10px; height: 10px; border: solid #fff; border-width: 2px 2px 0 0; transform: rotate(45deg);}
+
+
+
+/* etrBox */
+#etrBox{ border: 1px solid #B3EAB3; background: rgba(0, 185, 0, .1); padding: 10px; border-radius: 6px; margin: 24px 8px;}
+.entrybox{ background: #fff; padding-bottom: 32px;}
+.entrybox .ss-banner-box,.entrybox .ss-banner-box img{ width: 100%;}
+.entrybox .chara{ display: flex; justify-content: center; margin-top: 16px;}
+.entrybox .chara span{ display: block; border: 1px solid #333; border-radius: 3px; padding: 0.2em 0.4em; font-size: 14px; margin: 0 4px;}
+
+
+
+/* popUpBox */
+.popUpBox{ margin: 80px 16px 40px; background: #fff8e5; border-radius: 10px; position: relative; padding-bottom: 24px; padding-top: 20px;}
+.popUpBox::after{ display: block; content: ""; width: 100%; height: 50px; border-radius: 50%; position: absolute; left: 0; top: -20px; background: #fff8e5;}
+.popUpBox h2{  text-align: center; position: absolute; width: 100%; left: 0; top: -40px; z-index: 1; text-align: center;}
+.popUpBox h2 img{ width: 80%;}
+.popUpBox h3{ text-align: center; margin: 24px auto 0; font-size: 18px; position: relative; z-index: 1;}
+.popUpBox .popUplist{ display: flex; justify-content: space-around; margin: 8px 16px 0;}
+.popUpBox .popUplist li{ width: 32%;}
+.popUpBox .popUplist li span{ font-size: 12px; text-align: center; display: block; margin: 0 auto;}
+.popUpBox .popUplist li img{ width: 100%;}
+
+.popUpHtl{ background-color: #fff; padding: 16px 8px; margin: 0 10px; color: #333; padding-bottom: 76px; font-family: 'Noto Sans JP', sans-serif;}
+.popUpHtl .popUpHtl-title img{ width: 100%;}
+.popUpHtl .txt{ text-align: center; margin: 24px 24px 0; font-size: 14px; font-weight: bold; line-height: 1.6;}
+.popUpHtl .popUpHtl-list{ margin: 0 16px;}
+.popUpHtl .popUpHtl-list li{ margin-top: 16px;}
+.popUpHtl .popUpHtl-list li a{ display: block; text-align: center; font-size: 20px; font-weight: bold; padding: 16px 32px 16px 0; color: #333; border: 1px solid #BF0000; border-radius: 4px; box-shadow: 2px 2px 8px rgba(0,0,0,0.15); position: relative;}
+.popUpHtl .popUpHtl-list li a::after{ display: block; content: ""; position: absolute; right: 25px; top: 41%; width: 10px; height: 10px; border-top: 1px solid #BF0000; border-right: 1px solid #bf0000; transform: rotate(45deg);}
+.popUpHtl .popUpHtl-list li a span{ color: #BF0000;}
+.popUpHtl .bbox{ margin: 32px 24px 0; border: 1px solid #ccc; border-radius: 8px;}
+.popUpHtl .sns{ display: flex; justify-content: center; padding: 32px 0;}
+.popUpHtl .sns a{ margin: 0 8px;}
+.popUpHtl .txt2{ margin: 32px auto 0; text-align: center; font-size: 20px; line-height: 1.8; text-decoration: underline;}
+.popUpHtl .txt2 b{ color: #BF0000; text-decoration: underline;}
+.popUpHtl .btnred{ margin: .20px 16px 30px 16px; }
+.popUpHtl .btnred a{display: block; text-align: center; font-size: 20px; font-weight: bold; padding: 16px 32px 16px 0; color: #fff; background: #BF0000; border-radius: 4px; position: relative;}
+.popUpHtl .btnred a::after{ display: block; content: ""; position: absolute; right: 25px; top: 41%; width: 10px; height: 10px; border-top: 1px solid #fff; border-right: 1px solid #fff; transform: rotate(45deg);}
+.popUpHtl .qr{ margin: 32px auto ; text-align: center;}
+.popUpHtl .qr a{ display: block; margin: 0 auto 16px;}
+
+.ss-banner-box{ margin:0 8px;}
+
+.sqbnrBox .swiper-wrapper{ flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px;}
+.sqbnrBox .swiper-wrapper li{ width: auto; margin: 0;}
+.sqbnrBox .sqbnr4{ justify-content: flex-start;}
+.sqbnrBox .sqbnr4 li{ width: calc(50% - 8px); position: relative;}
+.mapArea .sqbnr li a:after{background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAkFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+WABnwAAAAL3RSTlMADRASFiYoLzg7P1NZWl5gZXp/g4mTlpmcoKSmra+3ub/BxMnN0dXa4Onq7vP1/HF4z2gAAACySURBVHjadZEDGsVgDATn2bZt5P63q5QU82m7099ENEa763U7amDpPyTk3iOhehHFqUpI/SeGTy3oy39J8a0AcJMMZ4BukP+TkTI94BPEB8wScYd6GP8rY1qM47zWZsJecs3C7OkI0Q42RuyV0FMtYZ5MNc7tZUItTP+F7qUJryA9TX8HOmGe6ivpAFwLLpHSN91/KvjUPrZ/1+OnPeh+XyVheI5ffIClPZpvNvNRK/p2AKdHSOaFbDTmAAAAAElFTkSuQmCC) right bottom no-repeat; display: block; position: absolute; bottom:5px; right:5px; width: 18px; height: 18px; content: ""; background-size: 100%;}
+
+.column_4.square .column-list dt img{ width: 100%;}
+
+/* app.ss_ranking_json.js */
+.Rankbox .ss-hotel p.originalPrice{ font-size:12px; color: #767676; position: relative; text-align: right; padding:10px 0 4px 0; margin:0;text-decoration:line-through;}
+.Rankbox .ss-hotel p.originalPrice span{ font-size: 12px; font-weight: normal; display: block; border-radius: 3px; padding:4px 6px; color: #ffffff; text-decoration: none;background:#f14f4f; position: absolute; top:0;left: 0;}
+.Rankbox .ss-hotel p.originalPrice span em{ font-size: 14px; font-style: normal;text-decoration: none;}
+.Rankbox .kenTabBox .kenTab.hide{display: none !important;}
+.Rankbox .swiper-container[data-length='0']{display: none !important;}
+
+
+/* history */
+#browsing-history{ margin: 0 8px;}
+#browsing-history .ss-hotel{ width: 164px; margin-right: 8px;}
+#browsing-history .noCoupon{ display: none;}
+#browsing-history .btn-close-history { display: flex; position: absolute; top: 0; right: 0; z-index: 2; padding: 7px; cursor: pointer; }
+.browsing-history-attention{ text-align: center; color: #999;}
+
+
+
+/* 230830 */
+.mt-sp { margin-top: 12px!important; margin-bottom: 15px;}
+.popUpHtl .btnwhite { margin: 20px 16px 40px 16px; }
+.popUpHtl .btnwhite a {display: block; text-align: center; font-size: 20px; font-weight: bold; padding: 16px 32px 16px 0; color: #333; background: #fff; border-radius: 4px; position: relative; border: 1px solid #bf0000;}
+.popUpHtl .btnwhite a::after { display: block; content: ""; position: absolute; right: 25px; top: 41%; width: 10px; height: 10px; border-top: 1px solid #bf0000; border-right: 1px solid #bf0000; transform: rotate(45deg);}
+
+
+
+/* 202312 */
+.yoyaku{ background: #FFF8E5; overflow: hidden; padding-bottom: 24px;}
+.yoyaku h2{ margin: 24px auto 0; text-align: center;}
+.yoyaku h2 img{ width: 80%; max-width: 350px;}
+.ss-banner-box.mt-sp{ margin-left: 16px; margin-right: 16px;}
+
+
+/* brand-hotel */
+#brand-hotel .mainTtl{position: relative; flex-direction: row; line-height: 20px;}
+#brand-hotel .mainTtl:after{margin-left:6px;padding: 2px 4px;border:1px solid #8c8c8c;border-radius:2px;color:#8c8c8c;content:"PR";font-size:16px; line-height: 1;}
+#brand-hotel .name{ min-height: 0;}
+
+.Rankbox .ss-hotel .icon { position: absolute; background: linear-gradient(to right, #255500, #36a436); color: #fff; font-size: 10px; border-radius: 2px; padding: 5px 20px 5px 5px; font-weight: bold; top: -32px; left: 0; display: inline-flex; align-items: center; }
+.Rankbox .ss-hotel .icon img { width: auto !important; }
+.Rankbox .ss-hotel .icon:after { display: block; content: ""; width: 1px; height: 1px; border-right: 1px solid #fff; border-bottom: 27px solid #fff; border-left: 10px solid transparent; border-top: 10px solid transparent; position: absolute; bottom: 0; right: 0; }
+
+
+.markLink{ margin-bottom: 0;}
+
+
+/* 202409 */
+#dailyBnr{ padding: 10px 0 15px;}
+#dailyBnr .mainTtl b{ font-size: 120%; color: #BF0000;}
+#dailyBnr div{ margin: 0 16px;}
+#dailyBnr div img{ width: 100%;}
+#dailyBnr div a:active{ opacity: .5;}
+#dailyBnr div span{ display: block; margin: 16px auto 8px; text-align: center; font-size: 18px; font-weight: 900;}
+#dailyBnr .jdsTab{ margin: 0;}
+#dailyBnr .derivationC{ margin: 8px 16px 0;}
+
+#bnrC .swiper-container{ padding-bottom: 8px;}
+#MAPBOX{ margin-top: 32px;}
+
+#considerRank .hotelbox .ss-hotel .ss-button-middle.ss-button-green.pre{ display: none;}
+.pre #considerRank .hotelbox .ss-hotel .ss-button-middle.ss-button-green.honban{ display: none;}
+.pre #considerRank .hotelbox .ss-hotel .ss-button-middle.ss-button-green.pre{ display: block;}
+
+.flexbox{ margin: 12px auto 0; display: flex; justify-content: center; gap: 20px;}
+.flexbox .jds_detialPopUp,.flexbox .nojds_detialPopUp{ line-height: 1; background-color: #fff; border: 1px solid #333; font-size: 12px; padding: 12px 24px 12px 8px; display: block; margin: 0 4px; border-radius: 6px; color: #333; position: relative;}
+.flexbox .jds_detialPopUp::after,.flexbox .nojds_detialPopUp::after{ content: ""; display: block; position: absolute; top: 50%; right: 0.5em; width: 0.5em; height: 0.5em; margin-top: -0.35em; border-top: 1px solid #333; border-right: 1px solid #333; -webkit-transform: rotate(45deg); transform: rotate(45deg);}
+.jds_popUp_plan{ width: 90%; height: auto; box-sizing: border-box; left: 5% !important; top: 50% !important; transform: translateY(-50%); overflow:auto; border-radius: 0;}
+.jds_popUp_plan>p{ padding: 0;}
+.jds_popUp_plan table { background-color: #fff; border: 1px solid #b4b4b4; font-size: 13px; line-height: 1.4; position: relative; padding-bottom: 10px; }
+.jds_popUp_plan table tr:first-child { color: #fff; }
+.jds_popUp_plan table tr:first-child td { text-align: center !important; background-color: #0dbd0d !important; color: #fff; }
+.jds_popUp_plan table td { display: block; padding: 5px; }
+.jds_popUp_plan table tr td:first-child { background-color: #e1e1e1; font-weight: 700; padding-right: 45px; }
+.jds_popUp_plan .jds_close_plan{position: absolute; cursor: pointer; width: 28px; height: 28px; top: 2px; right: 2px; font-size: 0; text-indent: -999999px; background-image: none; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE8GlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgOS4xLWMwMDIgNzkuYTZhNjM5NiwgMjAyNC8wMy8xMi0wNzo0ODoyMyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI1LjExIChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjQtMTEtMTJUMTQ6Mzg6NTErMDg6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDI0LTExLTEyVDE0OjQxOjU1KzA4OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDI0LTExLTEyVDE0OjQxOjU1KzA4OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1YmQ4MDRkYy1kMWM4LTFhNDMtYjc3OS0zZjdhMGE4MTExYTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NWJkODA0ZGMtZDFjOC0xYTQzLWI3NzktM2Y3YTBhODExMWE5IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6NWJkODA0ZGMtZDFjOC0xYTQzLWI3NzktM2Y3YTBhODExMWE5Ij4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo1YmQ4MDRkYy1kMWM4LTFhNDMtYjc3OS0zZjdhMGE4MTExYTkiIHN0RXZ0OndoZW49IjIwMjQtMTEtMTJUMTQ6Mzg6NTErMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyNS4xMSAoV2luZG93cykiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+AfvTxgAAAaRJREFUaIHtmdtxwjAURA+ZlEQB7sRLZZBKQgEugk6cHylxHEfPe/Ew4/3BGmTunpElrcVpnmdeWW97G+jVAbC3DoC99fIA76kvz+dzvByAu7OXtb5rTtP0b6eSERiBT+BqYKpU11BzzHXMAQzALVyL50BcQy1C7SHVOQdwBz4WbeELsTRPqH1P3VDyCInnQGyZ12bPhUpXIeEL0WQe6pZR4QPRbB7q9wFhC9FlHto2MmED0W0e2ndi0QdhYh76ooRogzAzD/1ZSNRBmJoHmzAnyiDMzYNdGhVpCBfzkEmjlVL4HFft9bWZebAFgDQEGJsHnxca8ftxijI3D35vZFuHTS4HUB4A6wkbJRxSrDXA1mrjGsUtJ3FuqVxP7ItFUasRyJkXTiNhAVC6SQkHiF6A2h1WGEP0ALTGA2EI0QrQm22EEUQLgFUwEwYQtQDWqVJ0QtQAeEVi0QFRCuCW54NEI0QJgLf5KNEAUXK4q0Xby3yU+AsxpG4oOdyNmcXbfJT4gbiQOdwtCXM34JH7IWMp1M3WPB1/dO+sA2BvHQB76+UBvgCT8oPfexdnZwAAAABJRU5ErkJggg==) no-repeat top left; background-size: 28px 28px; z-index: 9999;}
+.jds_popUp_plan table td a{ font-size: 13px; color: #1d54a7 !important; display: inline-block; font-weight: normal; padding-right: 16px; background: url(https://img.travel.rakuten.co.jp/special/supersale/202503/images/modal_svg.svg) right center no-repeat; background-size: 13px;}
+
+
+
+/* 202412 */
+#topBnrBox a:hover{ opacity: 1;}
+
+.moreCoupon {display: flex;justify-content: center;margin: 0 20px;position: relative;}
+.moreCoupon:before{position: absolute; content: ''; left: 0; right: 0;bottom: 40px; height: 70px;background: linear-gradient(to bottom, rgba(255, 256, 255, 0) 0, rgba(255, 255, 255, 0.95) 50%);z-index: 0;}
+.moreCoupon.disable:before{display: none;}
+
+.moreCoupon .moreCouponBtn{  height: auto; background: #fff; padding: 16px 0;  color: #009700; font-weight: bold; border-radius: 4px; border: 1px solid #009700; display: flex; align-items: center; justify-content: center;position: relative;cursor: pointer;flex: 100% 0 0;}
+.moreCoupon .moreCouponBtn:hover{opacity: .8;}
+.moreCoupon .moreCouponBtn::before{ content: "" !important; position: static; transform: translateX(-5px); width: 32px; height: 32px; background: url(https://img.travel.rakuten.co.jp/special/supersale/202506/images/btnIconCoupon.svg) no-repeat;}
+.moreCoupon .moreCouponBtn::after{ content: ""; position: absolute; right: 5%; top: 50%; transform: translateY(-65%) rotate(135deg); width: 13px; height: 13px; border: 1px solid #009700; border-bottom: none; border-left: none; display: block;}
+.moreCoupon .moreCouponBtn.active::after {transform: translateY(-50%) rotate(-45deg);top:58%}
+@media screen and (max-width:375px){
+.moreContainer .ptxt1 i{ letter-spacing: -1px;}
+}
+.moreContainer .ptxt1 i small{ font-size: 14px;}
+.moreContainer .ptxt1 span{ display: table; margin: 16px auto 0; font-size: 14px; border: 1px solid #333; border-radius: 2px; padding: 4px 8px; font-weight: 700;}
+.moreContainer .ptxt2{ font-size: 14px; margin: 16px 16px 0; line-height: 1.4;}
+.moreContainer .ptxt2 span{ font-size: 13px; color: #767676;}
+.moreContainer .photo{ margin: 16px 16px 0; text-align: center;}
+.moreContainer .photo img{ width: 100%;}
+
+.moreContainer .btnBox .ptxt3{ margin: 16px 16px 0; font-size: 14px; font-weight: bold; color: #FF008C; text-align: center;}
+.moreContainer .btnBox .btn{ margin: 8px 16px 0; text-align: center;}
+.moreContainer .btnBox .btn a{ display: block; width: 280px; padding: 12px 0; background: #BF0000; color: #fff; font-size: 20px; border-radius: 50px; margin: 0 auto; text-align: center;}
+.moreContainer .btnBox .btnmno a{ background: #FF008C;}
+.moreContainer .btnBox .end a{ color: #fff; background: #aeaeae;}
+.moreContainer .btnBox .end a:hover{ opacity: 1;}
+.moreContainer .btnBox .ptxt4{ color: #6d6d6d; font-size: 13px; margin: 8px 16px 0; }
+.moreContainer .btnBox .ptxt5{ font-size: 13px; margin: 16px 16px 0; line-height: 1.4;}
+
+.jds_popUp_plan>p#popUpplan .photo{ text-align: center;}
+.jds_popUp_plan>p#popUpplan .photo img{ width: 100%;}
+
+#asobi .swiper-container{ padding-bottom: 8px;}
+#asobi .swiper-wrapper dt{ height: 110px; border-radius: 5px; overflow: hidden;}
+#asobi .swiper-wrapper dd{ font-size: 14px; margin-top: 8px; color: #333; line-height: 1.6;}
+#asobi .swiper-wrapper dd.price{ color: #bf0000; font-weight: bold;}
+#asobi .swiper-wrapper dd.price small{ font-size: 12px;}
+#asobi .swiper-wrapper dd.date{ display:flex; justify-content: space-between; color: #6D6D6D;}
+#asobi .swiper-wrapper dd.date span{ padding-left: 18px;}
+#asobi .swiper-wrapper dd.date span:nth-child(1){ background: url(https://img.travel.rakuten.co.jp/special/supersale/202503/images/iconLocation.png) left center no-repeat;}
+#asobi .swiper-wrapper dd.date span:nth-child(2){ background: url(https://img.travel.rakuten.co.jp/special/supersale/202503/images/iconTime.png) left center no-repeat;}
+#asobi .ss-banner-box{ margin-top: 48px;}
+#asobi .ss-banner-box img{ width: 100%;}
+#asobi .derivationC{ margin: 0 8px;}
+
+
+#bnrC ul{ justify-content: flex-start;}
+
+#mobile_bnr{ margin-top: 40px;}
+
+.mno #search-box.verB.test #searchSwitchArea1,.mno #search-box.verB.test #searchSwitchArea2{ background: #FFE7F7;}
+
+.moreBox input.btn{ cursor: pointer; border: none; margin: 8px auto 0 !important; text-align: center;  display: block; width: 280px; padding: 12px 0; background: #BF0000; color: #fff; font-size: 20px; border-radius: 50px; margin: 0 auto; text-align: center;}
+.moreBox input.btn:hover{ opacity: .7;}
+
+.nosearchUndate #search-box.verB .searchUndate{ display: none !important;}
+
+.moreBox.moreCoupon{ margin:0; position: relative;}
+.moreBox.moreCoupon .moreContainer { /* max-height: 400px;*/ margin:8px 0 100px;}
+.moreBox.moreCoupon input:checked~.moreContainer{ padding-bottom: 0;}
+.moreBox.moreCoupon label{ bottom: -60px; width: calc(100% - 32px); height: auto; background: #fff; padding: 12px 0; font-size: 14px; color: #009700; font-weight: bold; border-radius: 4px; border: 1px solid #009700; display: flex; align-items: center; justify-content: center; flex-direction: row-reverse;}
+.moreBox.moreCoupon label::after{ content: "" !important; position: static; transform: translateX(-5px); width: 20px; height: 20px; background: url(https://img.travel.rakuten.co.jp/special/supersale/202503/images/btnIconCoupon.svg) no-repeat; background-size: 20px;}
+.moreBox.moreCoupon label::before{ content: ""; position: absolute; left: 90%; top: 50%; transform: translateY(-65%) rotate(135deg); width: 10px; height: 10px; border: 1px solid #009700; border-bottom: none; border-left: none;}
+.moreBox.moreCoupon input:checked+label::before {transform: translateY(-50%) rotate(-45deg);}
+
+
+
+/* 202506 */
+.mainTtl{ text-align: center; margin-bottom: 16px; padding: 0; flex-direction: column;}
+.mainTtl em{ color: #bf0000; }
+.mainTtl small{ font-size: 14px; margin-top: 16px;font-weight: normal;text-align: center;}
+
+
+/* ss_benefit */
+.bgE6F6FF{ background: #E6F6FF; padding: 32px 0;}
+#ss_benefit{ margin-bottom: 0; padding-bottom: 0; background: none;}
+#ss_benefit .photo{ margin: 24px auto 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px;}
+#ss_benefit .photo img{ width: 100%;}
+#ss_benefit .wn{ text-align: center; margin: 24px auto 0; font-size: 12px; color: #6D6D6D;}
+
+.preSale { margin: 24px 8px 0; padding-bottom: 8px; background: none; position: relative; }
+.preSale.nobg{ background: none;}
+.bplink { margin: 24px auto 0; display: table; background: #E6F6FF; position: relative; z-index: 9; align-items: center; font-size: 16px; color: #00b900;line-height: 25px; font-weight: bold; }
+.bplink img { padding: 0 4px; }
+.bplink span { display: flex; align-items: center; color: #fff; font-weight: 400; font-size: 14px; background: #00b900; padding: 4px 2px; border-radius: 5px; }
+.bplink span b { font-size: 20px; font-weight: bold; padding: 0 4px; }
+.bplink a{ color: #00b900; text-decoration: underline;}
+.bplink a:active{ text-decoration: none;}
+#bonusLevel{ width: 60px;}
+.mblink { margin: 16px auto 0; display: table; background: #E6F6FF; position: relative; z-index: 9; align-items: center; font-size: 16px; color: #FF008C;line-height: 25px; font-weight: bold; }
+.mblink img { padding: 0 4px; }
+.ploginTxt{ text-align: center; font-size: 18px; font-weight: bold;}
+.ploginTxt b{ color: #bf0000;}
+.plogin { display: flex; justify-content: center; margin: 20px auto; }
+form .btn.login {display: flex;justify-content: center;margin: 20px auto;}
+.plogin a,form .btn.login { position: relative; text-align: center; font-size: 24px; padding: 14px 0; width: 90%; background: #bf0000; color: #fff; display: block; border-radius: 100rem; line-height: 1; border: none;}
+.plogin a::after{ display: inline-block; content: ""; margin-left: 6px; width: 24px; height: 24px; background: url(https://img.travel.rakuten.co.jp/special/supersale/202503/images/NewWindowIcon.svg) no-repeat center center / 24px; vertical-align: -2px;}
+.preSale #myCanvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;}
+.ss_special_offer_animated_text { position: relative; white-space: nowrap; overflow: hidden; line-height: 1.2; text-align: center; font-size: 18px; font-weight: bold; margin: 0 auto; display: table; background: #E6F6FF; position: relative; z-index: 9; }
+.ss_special_offer_animated_text .red { color: #bf0000; }
+.ss_special_offer_animated_text .bred { color: #bf0000; font-size: 32px; }
+.ss_special_offer_animated_text .blue { color: #007CB5; }
+.ss_special_offer_animated_text .bblue { color: #007CB5; font-size: 32px; }
+.ss_special_offer_animated_text span { display: inline-block; opacity: 0; transform: translateX(-10px) translateY(5px);}
+.ss_special_offer_animated_text.animate span { animation: largerFasterWaveOnce 0.2s ease-in-out forwards; }
+.ss_special_offer_animated_text br { display: block; }
+.ss_special_offer_animated_text.animate span:nth-child(1) { animation-delay: 0.02s; }
+.ss_special_offer_animated_text.animate span:nth-child(2) { animation-delay: 0.04s; }
+.ss_special_offer_animated_text.animate span:nth-child(3) { animation-delay: 0.06s; }
+.ss_special_offer_animated_text.animate span:nth-child(4) { animation-delay: 0.08s; }
+.ss_special_offer_animated_text.animate br:nth-child(5) { animation-delay: 0.1s; }
+.ss_special_offer_animated_text.animate span:nth-child(6) { animation-delay: 0.12s; }
+.ss_special_offer_animated_text.animate span:nth-child(7) { animation-delay: 0.14s; }
+.ss_special_offer_animated_text.animate span:nth-child(8) { animation-delay: 0.16s; }
+.ss_special_offer_animated_text.animate span:nth-child(9) { animation-delay: 0.18s; }
+.ss_special_offer_animated_text.animate span:nth-child(10) { animation-delay: 0.2s; }
+.ss_special_offer_animated_text.animate span:nth-child(11) { animation-delay: 0.22s; }
+.ss_special_offer_animated_text.animate span:nth-child(12) { animation-delay: 0.24s; }
+.ss_special_offer_animated_text.animate span:nth-child(13) { animation-delay: 0.26s; }
+.ss_special_offer_animated_text.animate span:nth-child(14) { animation-delay: 0.28s; }
+.ss_special_offer_animated_text.animate span:nth-child(15) { animation-delay: 0.3s; }
+.ss_special_offer_animated_text.animate span:nth-child(16) { animation-delay: 0.32s; }
+.ss_special_offer_animated_text.animate span:nth-child(17) { animation-delay: 0.34s; }
+.ss_special_offer_animated_text.animate span:nth-child(18) { animation-delay: 0.36s; }
+.ss_special_offer_animated_text.animate span:nth-child(19) { animation-delay: 0.38s; }
+.ss_special_offer_animated_text.animate span:nth-child(20) { animation-delay: 0.4s; }
+.ss_special_offer_animated_text.animate span:nth-child(21) { animation-delay: 0.42s; }
+.ss_special_offer_animated_text.animate span:nth-child(22) { animation-delay: 0.44s; }
+.ss_special_offer_animated_text.animate span:nth-child(23) { animation-delay: 0.46s; }
+.ss_special_offer_animated_text.animate span:nth-child(24) { animation-delay: 0.48s; }
+@keyframes largerFasterWaveOnce {
+0% { opacity: 0; transform: translateX(-10px) translateY(5px); }
+50% { transform: translateX(0) translateY(-5px); opacity: 1; }
+100% { opacity: 1; transform: translateX(0) translateY(0); }
+}
+
+
+.preSalePopup{ margin: 32px auto 0; border-top: 1px dashed #ccc; padding: 16px 0; display: flex; justify-content: center;}
+.preSalePopup .kk_popup_trigger{ display: flex; color: #333; position: relative;}
+.preSalePopup .kk_popup_trigger::after{ display: inline-block; content: ""; margin-left: 4px; width: 16px; height: 16px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACfSURBVHgBzVLRDYQgDKWXG+RGILDAjeJNIjeCEziCK7gAhE10A3waMYTEIl/6EkJo+/peG4S4G1QqUEoZImrzeAjh75wzohZo2Gutp7Xx+n7VkuGGoN7F2HtPNIj3nMVIttY2Uf1oAHy4mVJyniuOwJFTB1Xk1OmpAynll1MuOvDej7jGxI3J1VkHV3F/g20H2JXHNeCLtkztjPMTj8MCvxdCunH+0LAAAAAASUVORK5CYII=);}
+
+/*popup-container*/
+.kk_popup_container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: flex; justify-content: center; align-items: center; z-index: 1000;}
+.kk_popup_close_btn { z-index: 10000; position: absolute; cursor: pointer; font-size: 0; height: 30px; width: 30px; border-radius: 50px; top: 2px; right: 2px; background: #333 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAFVBMVEUAAAD///////////////////////9Iz20EAAAABnRSTlMAQF+foGCwwWJQAAAAg0lEQVR42u3VBQ6EQBTA0PH7H3njCzSkuP84vOISvtl34syVqeVxn1vCJlr7F/StYR+lW9AXLGVB7wU9C/Ms1LOglwJeC3gt4LWA1wJeC3gr4KVQz/vb8iyPwnwpUvD5QSEehXgU4lGoZ+GehXsW9Df+XkX5XvFjXLueRZ39Q/lm1/kBvUEF19SMEPsAAAAASUVORK5CYII=) center center no-repeat; background-size: 24px; scrollbar-color: rgba(0, 0, 0, 0.3) transparent;}
+.kk_popup_body { width: 100%; padding: 24px 16px; background: #E6F6FF; overflow-y: scroll; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); position: relative; scrollbar-width: thin; scrollbar-color: rgba(0, 0, 0, 0.3) transparent; overflow-y: auto; -webkit-overflow-scrolling: touch; overflow: overlay;}
+.kk_popup_body .preSaleTtl{ text-align: center; margin:  0 auto;}
+.kk_popup_body .preSaleTtl img{ width: 100%;}
+.kk_popup_body .preSaleTxt1 { font-weight: 700; margin: 16px auto 0; }
+.kk_popup_body .preSaleTxt1 span { display: table; font-size: 14px; border: 1px solid #333; border-radius: 2px; padding: 4px 8px; font-weight: 700; }
+.kk_popup_body .preSaleTxt2 { font-size: 14px; margin: 24px auto 0; line-height: 1.4; }
+.kk_popup_body .preSaleTxt2 span { font-size: 12px; color: #767676; }
+
+/* ss_campaign */
+.bgF6FFF6{ background: #F6FFF6; padding: 24px 0;}
+#ss_campaign{ margin-bottom: 0; padding-bottom: 0; background: none;}
+.ss_campaign_shadow{position: relative; filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.1));}
+/* .ss_campaign_shadow.disabled{filter: none;pointer-events:none}
+.ss_campaign_shadow.disabled:before{position: absolute; font-size: 24px; top: 50%; left: 0; transform: translateY(-50%);color: #fff;z-index: 3;font-weight: normal; letter-spacing: 1px;width: 100%; text-align: center;}
+#coupon_get.ss_campaign_shadow.disabled:before{content: '獲得しました';}
+#campaign.ss_campaign_shadow.disabled:before{content: 'エントリーしました';}
+.ss_campaign_shadow.disabled:after{background: rgba(0, 0, 0, 0.7);clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), 50% 100%, 0 calc(100% - 24px));content: "";position: absolute;inset: 0;z-index: 2;} */
+.ss_campaign_box{background: #fff; position: relative; inset: 0; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), 50% 100%, 0 calc(100% - 24px));padding-bottom: 56px;}
+
+
+.ss_campaign_box:last-of-type{ margin-bottom: 24px;}
+.ss_campaign_box h3{ background: #EFEFEF;display: flex; align-items: center; color: #00B900; font-size: 16px; font-weight: bold;}
+.ss_campaign_box h3 span{ background: #00B900; color: #fff; font-weight: normal; padding: 8px 16px; margin-right: 16px;}
+.ss_campaign_box h3 span b{ font-size: 18px; }
+
+.ss_campaign_shadow:last-of-type .ss_campaign_box{clip-path:none;padding-bottom: 16px;}
+
+.cnts{ margin: 32px auto 0;}
+.cnts .debutImg{ display:flex;flex-direction:column;align-items:center; margin: 0 24px 16px;}
+.cnts .debutImg img{ width: 100%;}
+.cnts .debutTxt{ font-size: 12px; line-height: 1.4; display: flex; justify-content: center; margin: 8px auto 0;}
+.cnts .debutTxt2{ font-size: 12px; line-height: 1.4; display: flex; justify-content: center; margin: 8px auto 0;}
+.cnts .debutTxt3{ font-size: 12px; color: #13366A; font-weight: 600; line-height: 1.4; display: flex; justify-content: center; margin: 8px auto 0;}
+.cnts .couponOneClick{width:auto}
+.cnts .couponOneClick .coupon__button__pattern{ justify-content: center;}
+.cnts .coupon__amount__condition{display:flex;justify-content:space-between;align-items:center;gap: 8px; position: relative;}
+.cnts .coupon__amount__condition::after{content: ""; transform: translateY(10px); background-size: 16px; width: 16px; height: 16px; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAMAAADmrkDzAAAARVBMVEUAAAAwMDAwMDAwMDAxMTEzMzMyMjIzMzMzMzMyMjIzMzM1NTUyMjIwMDAzMzMzMzMyMjIxMTEyMjIzMzMyMjI0NDQzMzP51LwrAAAAFnRSTlMAIEAwoJ+Av+9/r2BgEFDP3x9w3+9Aa03MBwAAAHlJREFUeNrdykUSQkEUA8DvriPv/kfFSRhSxQ7rdWcfkhdQylEZ1HI07VWHofXGQ4cBQ4dxwpjzq5lDhrF0djVxoLHadrVQ4LHZnl0hyMFBDw56cNCDA+PBQQ9HQY95RRCDuM29GI01fzzahE+Gsychzx7EKTVnb3YA6mQP/gr9fQ8AAAAASUVORK5CYII=);}
+.cnts .coupon__condition,.cnts .cpbtn{padding:8px 16px;background:#eaeaea;border-radius:4px;color:#333; font-size: 14px; margin:24px auto 0;}
+.cnts .coupon__condition::after{ content: normal;}
+.cnts .term{ display:flex; align-items: center; gap: 8px; margin:24px 24px 0; font-size:12px; }
+.cnts .term span{  padding:4px 8px; border:1px solid #666; box-sizing:border-box; border-radius:4px}
+@media screen and (max-width: 414px){
+.cnts .term{ margin: 24px 16px 0; gap: 4px;}
+  
+}
+/* .cnts .term+ul{ font-size:14px;word-break:break-all}
+.cnts .term+ul li small{ display: block; margin-top: 8px; font-size: 12px;} */
+.cnts .txts{ margin: 16px 16px 8px; font-size: 12px; line-height: 1.4;}
+.cnts .txts small{display: block; font-size: 12px; color: #767676;margin-bottom: 4px;}
+
+.pointMoreBox{ margin: 24px auto;}
+.pointMoreBox .debutImg{ margin-bottom: 32px;}
+.pointMoreBox .pointMoreBoxBtn{ font-size: 14px; color: #333; text-align: center; cursor: pointer; position: relative;}
+.pointMoreBox .pointMoreBoxBtn::after{ content: ""; display: block; position: absolute; left: calc(50% + 50px); top: calc(50% - 3px); transform: translateY(-50%) rotate(135deg); width: 8px; height: 8px; border: 1px solid #333; border-bottom: none; border-left: none;}
+.pointMoreBox .pointMoreBoxBtn.active::after{transform: translateY(-50%) rotate(-45deg);left: calc(50% + 35px); top: calc(50% + 4px);}
+
+/* rex */
+.rex-button{ width: 90% !important;}
+#rex-ceb-01{ margin-bottom: 0;}
+.Alert{ display: none !important; font-size: 12px !important; padding: 8px 8px 8px 24px !important; margin: 35px 0 0 !important;}
+.Caution_svg__\+WvHR{ left: 8px !important;}
+.CampaignButton{ margin-top: 8px !important;}
+.CampaignButton-disabled{cursor: not-allowed;}
+.NOT_LOGGED_IN{ display: none !important; font-size: 14px !important; margin-top: 8px !important;}
+.CampaignEntryButton_campaignButton__n6hK5 .CampaignEntryButton_rexButton__VH0Gh.CampaignEntryButton_success__GLKNB{ color: #047205 !important;}
+.CampaignEntryButton_campaignButton__n6hK5 .CampaignEntryButton_rexButton__VH0Gh.CampaignEntryButton_success__GLKNB span { transform: translateX(5px) !important;}
+
+
+/* まとめてクーポンを獲得する */
+.getAllCoupon{ margin: 0 16px; border-bottom: none; padding-bottom: 0; overflow: hidden;}
+.getAllCouponTxt{font-size: 12px; color: #333; line-height: 1.6; margin: 16px 0 0;}
+.getAllCouponTxt em{color: #1D54A7;}
+.cpn-all-click-btns{ position: relative; font-size: 24px;  padding: 14px 0; width: calc(100% - 16px); max-width: none;}
+.cpn-all-click-btns::after{ content: normal; }
+.cpnAnchor{display: flex; justify-content: center; margin: 24px auto 0;}
+.cpnAnchor span{text-decoration: underline;font-size: 16px; color: #333; padding-right: 32px; position: relative;}
+.cpnAnchor span:after{position: absolute; content: '';right: 0; width: 10px; height: 10px; border-right: 1px solid #333; border-bottom: 1px solid #333; right: 0; top: 50%; transform: rotate(45deg) translate(-70%, -30%);}
+
+#ss_sale_hotel{margin-top: 32px; padding-bottom: 0;}
+.moreSchedule .txts{font-size: 14px;line-height: 1.5;margin: 16px;}
+.limitBox{padding: 16px; border: 2px dashed #B8E4B8; background: #F6FFF6;margin: 16px;}
+.limitBox.blueBg{background: #F2FAFF;border-color: #B1E1F3;}
+.limitBox h4{display: flex; align-items: center; flex-direction: column;gap: 8px;font-size: 14px;letter-spacing: 2px;text-align: center;}
+.limitBox h4 span{display: flex; justify-content: space-between;margin-bottom: 16px;}
+.limitBox h4 span img{width: 49%;}
+.moreSchedule .moreScheduleTtl{ font-size: 16px; text-align: center; margin-top: 32px; line-height: 1.4;display: flex;flex-direction: column;align-items: center;}
+.moreSchedule .moreScheduleTtl b{ color: #009700;}
+.moreSchedule .moreScheduleTtl b em{ font-style: normal; font-size: 22px;}
+.moreSchedule .moreScheduleTtl small{ font-size: 13px; font-weight: normal; display: block; margin-top: 8px;}
+.moreSchedule .moreScheduleTtl small.blue{ font-size: clamp(14px, calc(14px + (2 * ((100vw - 375px) / 55))), 16px); color: #002896; font-weight: bold;text-align: left; width: 90%;padding-left: 20px;position: relative;white-space: nowrap;}
+.moreSchedule .moreScheduleTtl small.blue:before{position: absolute; content: '・';font-size: 16px; color: #002896; left: 0; top: 50%;transform: translateY(-50%);}
+.moreSchedule .moreScheduleTtl span{ position: relative;}
+.moreSchedule .moreScheduleTtl span::before { font-weight: normal; position: absolute; left: -25px; top: 0; display: block; content: "|"; transform: rotate(-30deg); }
+.moreSchedule .moreScheduleTtl span::after { font-weight: normal; position: absolute; right: -25px; top: 0; display: block; content: "|"; transform: rotate(30deg); }
+.moreSchedule ul{ margin: 16px auto 0; display: flex; flex-direction: column; gap: 8px;}
+.moreSchedule ul li a{ display: block; position: relative; color: #fff; font-size: 14px; font-weight: 600; text-align: center; padding: 8px 0; background: #009700 url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/btn_icon_hotel.svg) no-repeat 12px center / 28px; border-radius: 4px;box-sizing: border-box;border: 1px solid #009700;}
+.moreSchedule ul li a.redBtn{background-color: #bf0000;border-color: #bf0000;}
+.moreSchedule ul li.bgnone a{background: url(https://img.travel.rakuten.co.jp/special/supersale/202512/images//btn_icon_hotel_bk.svg) no-repeat 12px center / 28px;color: #333;border: 1px solid #333;padding: 4px 0;line-height: 1.2;}
+.moreSchedule ul li.bgnone a small{display: block;font-size: 11px; font-weight: normal;}
+/* .moreSchedule ul li.dp a{ background: #009700 url(https://img.travel.rakuten.co.jp/special/supersale/202503/images/btnIconDpw.svg) no-repeat 12px center / 28px;}
+.moreSchedule ul li.jr a{ background: #009700 url(https://img.travel.rakuten.co.jp/special/supersale/202503/images/btnIconJRw.svg) no-repeat 12px center / 28px;} */
+
+.moreSchedule ul li a.unClick{color: #9C9C9C;background: #D1D1D1 url(https://img.travel.rakuten.co.jp/special/supersale/202512/images/btn_icon_hotel_gy.svg) no-repeat 12px center / 28px;border: 1px solid #D1D1D1;}
+.moreSchedule ul li a.unClick,.moreSchedule ul li a.unClick:hover{opacity:1; cursor: default;pointer-events: none;}
+.moreSchedule ul li.bgnone a.unClick{background: url(https://img.travel.rakuten.co.jp/special/supersale/202512/images/btn_icon_hotel_gy.svg) no-repeat 12px center / 28px;}
+
+
+.moreSchedule ul li.blueBtn a{background: #002896 url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/btn_icon_special.svg) no-repeat 12px center / 28px;box-sizing: border-box;border: 1px solid #002896;}
+
+.moreSchedule ul li.blueBtn a.unClick{color: #9C9C9C;background: #D1D1D1 url(https://img.travel.rakuten.co.jp/special/supersale/202512/images/btn_icon_special_gy.svg) no-repeat 12px center / 28px;border: 1px solid #D1D1D1;}
+
+.moreSchedule ul li.fuki_holiday a:before{position: absolute; background: url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/fuki_holiday.png) no-repeat center / 100% 100%; width: 77px; height: 30px; left: 24px; top: -14px;content: '';}
+/* .moreSchedule ul li.fuki_many a:before{position: absolute; background: url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/fuki_many.png) no-repeat center / 100% 100%; width: 77px; height: 30px; left: 24px; top: -14px;content: '';} */
+.moreSchedule ul li a b{ font-size: 20px;}
+.moreSchedule ul li a::after { content: ""; position: absolute; right: 16px; top: 50%; transform: translateY(-65%) rotate(45deg); width: 8px; height: 8px; border: 1px solid #fff; border-bottom: none; border-left: none; }
+.moreSchedule ul li a:hover{ opacity: .7;}
+.moreSchedule ul li a.unClick::after{border-color: #9C9C9C;}
+
+
+/* coupon */
+#COUPON{ padding:0; margin-bottom:80px;}
+/* .cpnCloseBtn{position: fixed; width: 70px; right: 58px;bottom: 10px; z-index: 1000;display: none;} */
+.cpnCloseBtn img{display: block; width: 100%;}
+.coupon_txt{ margin:32px auto 8px; padding: 0; color: #BF0000 ; font-size: 14px; text-align: center; }
+.coupon_txt a{ color: #BF0000; text-decoration: underline;}
+.coupon__filter__guide{ margin: 16px auto 0;}
+.coupon__filter{ margin-bottom: 0;}
+.coupon__box {max-height: 670px;overflow: hidden;transition: max-height 0.5s;}
+.coupon__box__holder{ padding-top: 8px;row-gap: 16px;}
+.coupon__title{ margin: 24px auto 0; padding: 0;}
+.coupon__title b{ font-size: 18px;}
+.coupon__title em{ font-size: 14px; color: #BF0000 }
+.coupon__subtitle{ margin-top: 0; padding: 0; color: #BF0000 !important; font-size: 14px !important; font-weight: normal !important;}
+.coupon__subtitle a{ color: #BF0000 !important; text-decoration: underline;}
+.coupon__subtitle span{ margin-top: 8px; color: #000 !important; font-size: 12px !important; border:none; }
+.coupon__subtitle span.blue{ color:#008FD8 !important; font-size: 14px !important;}
+.no-coupon{ padding: 32px 16px;position: relative;z-index: 2;}
+
+.other-cpn-bnr{ margin: 40px 16px;}
+.other-cpn-bnr .other{ font-size: 14px;}
+.other-cpn-bnr .btnbox{ background: none; padding: 0; margin-top: 16px;}
+.other-cpn-title{ justify-content: center;align-items: center;gap: 4px;}
+.other-cpn-title .ttl{ font-size: 18px; line-height: 1.4; text-align: center; }
+.other-cpn-bnr .btnbox a{position: relative; font-size: 16px; font-weight: bold; background: url(https://img.travel.rakuten.co.jp/special/sales/coupon/202206/images/icon_cpn.svg) no-repeat 16px center / 20px;height: auto;border: 1px solid #333;padding: 11px 0;border-radius: 100rem;}
+.other-cpn-bnr .btnbox a:before{content:normal;}
+.other-cpn-bnr .btnbox a:after{position: absolute; content: ''; width: 8px; height: 8px; right: 16px; top: 50%; transform: translateY(-65%) rotate(45deg); border-top: 1px solid #333; border-right: 1px solid #333;}
+
+.ss_sale_hotel_dp{ margin: 24px auto 0; padding-top: 24px;}
+.ss_sale_hotel_dp a {position: relative; border: 1px solid #333; border-radius: 100rem; color: #333; display: flex; align-items:center; padding: 14px 0; justify-content: center; font-size: 16px; font-weight: bold; background:#fff url(https://img.travel.rakuten.co.jp/special/supersale/202509/images/btn_icon_dp.svg) no-repeat 16px center / 28px;}
+.ss_sale_hotel_dp a:after{position: absolute; content: ''; width: 8px; height: 8px; right: 16px; top: 50%; transform: translateY(-65%) rotate(45deg); border-top: 1px solid #333; border-right: 1px solid #333;}
+
+/* #brand-hotel .mainTtl span,#halfBnr .mainTtl span,#MAPBOX .mainTtl span ,#considerRank .mainTtl span ,#Searchbox .mainTtl span ,#OSUSUME .mainTtl span{font-size: 16px;} */
+.mainTtl span{font-size: 20px;}
+.gomain{ margin-bottom: 8px;}
+
+.modal-coupon.ss_campaign_modal h2{ padding: 0 !important;}
+.modal-coupon.ss_campaign_modal h2 span{ display: none !important;}
+.modal-coupon.ss_campaign_modal .tableholderCpn table tr td:first-child{ padding: 10px 0;}
+
+.furusatoBox{background: #FCEDBD;padding: 24px 8px;display: flex;flex-direction: column;row-gap: 16px;}
+.furusatoBox img{width: 100%;}
+
+#otoku{margin-top:40px;padding: 0;}
+.otokuCpn{margin: 0 16px;}
+.otokuCpn li{box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);padding: 4px;margin-bottom: 8px;}
+.otokuCpn li a{display: flex; justify-content: space-between; align-items: center;}
+.otokuCpn li a.nolink:hover,.otokuCpn li a.nolink:active{opacity: 1;}
+.otokuCpn li a p:first-of-type{display: flex;flex-direction: column; row-gap: 2px; align-items: center;font-size: 12px; color: #fff; font-weight: bold;padding: 4px;width: 76px;}
+.otokuCpn li a p:first-of-type small{font-size: 10px;display: block;}
+.otokuCpn li.otoku_dp a p:first-of-type{background: #F154BA;}
+.otokuCpn li.otoku_ov a p:first-of-type{background: #C371EF;}
+.otokuCpn li.otoku_car a p:first-of-type{background: #D18100;}
+.otokuCpn li.otoku_bus a p:first-of-type{background: #009CEB;}
+.otokuCpn li.otoku_play a p:first-of-type{background: #00B900;}
+.otokuCpn li a p:nth-of-type(2){color: #333;font-size: 14px;font-weight: bold;padding: 0 8%;box-sizing: border-box;flex: 1; display: flex;align-items: baseline;flex-wrap: wrap;}
+.otokuCpn li a p:nth-of-type(2) span{color: #bf0000;font-size: 15px;}
+.otokuCpn li a p:nth-of-type(2) span strong{font-size: 22px;}
+
+.navSPbtn{right: 0;}
+.ss-noteOut{margin: 0;}

@@ -1,0 +1,10 @@
+      <style>
+        .btn-aichat{display: block;}
+        .navSPbtn li.btn-aichat{width: 60px;right: 4px;}
+      </style>
+      <li class="btn-aichat aichat-link-float">
+        <span class="close">close</span>
+        <a href="javascript:void(0);" class="AiChatBtn aichat-link-float">
+        <img src="https://img.travel.rakuten.co.jp/special/supersale/202509/images/AiChatBtn.png" alt="AIで宿を探す" class="aichat-link-float">
+        </a>
+      </li>
